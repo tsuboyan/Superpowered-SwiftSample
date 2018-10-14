@@ -13,7 +13,8 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     
     var spPlayer: SPPlayer!
     
-    @IBOutlet weak var playTempoSlider: UISlider!
+    @IBOutlet weak var tempoSlider: UISlider!
+    @IBOutlet weak var pitchSlider: UISlider!
     @IBOutlet weak var seekSlider: UISlider!
     
     override func viewDidLoad() {
@@ -59,8 +60,12 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         spPlayer.pause()
     }
     
-    @IBAction func playTempoSliderChanged(_ sender: Any) {
-        spPlayer.setTempo(tempo: playTempoSlider.value)
+    @IBAction func tempoSliderChanged(_ sender: Any) {
+        spPlayer.setTempo(tempo: tempoSlider.value)
+    }
+    
+    @IBAction func pitchSliderChanged(_ sender: Any) {
+        spPlayer.setPitch(pitch: Int(pitchSlider!.value))
     }
     
     @IBAction func seekSliderChanged(_ sender: Any) {

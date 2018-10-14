@@ -41,6 +41,10 @@ class SPPlayer: NSObject {
         superpowered.setTempo(tempo)
     }
     
+    func setPitch(pitch: Int) {
+        superpowered.setPitch(Int32(pitch))
+    }
+    
     func setLoop(loop: Bool) {
         superpowered.setLoop(loop)
     }

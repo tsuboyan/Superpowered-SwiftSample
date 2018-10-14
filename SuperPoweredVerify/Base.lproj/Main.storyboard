@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,56 +21,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-n3-RlK">
-                                <rect key="frame" x="10" y="273.5" width="367" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9NC-vr-E5G">
+                                <rect key="frame" x="10" y="193" width="355" height="281.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GXz-qc-sBK">
-                                        <rect key="frame" x="0.0" y="0.0" width="367" height="150"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9NC-vr-E5G">
-                                                <rect key="frame" x="0.0" y="0.0" width="367" height="150"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boc-w1-DtC" userLabel="selectSongButton">
-                                                        <rect key="frame" x="0.0" y="0.0" width="367" height="30"/>
-                                                        <state key="normal" title="Select"/>
-                                                        <connections>
-                                                            <action selector="selectSongButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iT5-zt-dpP"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-gw-RYW" userLabel="playButton">
-                                                        <rect key="frame" x="0.0" y="30" width="367" height="30"/>
-                                                        <state key="normal" title="Play"/>
-                                                        <connections>
-                                                            <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opr-Tu-EGT"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDy-BG-vJN" userLabel="stopButton">
-                                                        <rect key="frame" x="0.0" y="60" width="367" height="30"/>
-                                                        <state key="normal" title="Stop"/>
-                                                        <connections>
-                                                            <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpD-YM-XDj"/>
-                                                        </connections>
-                                                    </button>
-                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-oI-Xxz" userLabel="playTempoSlider">
-                                                        <rect key="frame" x="-2" y="90" width="371" height="31"/>
-                                                        <connections>
-                                                            <action selector="playTempoSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KoB-Ks-vVk"/>
-                                                        </connections>
-                                                    </slider>
-                                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-Br-1aU" userLabel="seekSlider">
-                                                        <rect key="frame" x="-2" y="120" width="371" height="31"/>
-                                                        <connections>
-                                                            <action selector="seekSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GwU-ds-loP"/>
-                                                        </connections>
-                                                    </slider>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="HuQ-Oj-TH4"/>
-                                        </constraints>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boc-w1-DtC" userLabel="selectSongButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                        <state key="normal" title="Select"/>
+                                        <connections>
+                                            <action selector="selectSongButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iT5-zt-dpP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-gw-RYW" userLabel="playButton">
+                                        <rect key="frame" x="0.0" y="35" width="355" height="30"/>
+                                        <state key="normal" title="Play"/>
+                                        <connections>
+                                            <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opr-Tu-EGT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDy-BG-vJN" userLabel="stopButton">
+                                        <rect key="frame" x="0.0" y="70" width="355" height="30"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpD-YM-XDj"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxh-KT-lWt">
+                                        <rect key="frame" x="0.0" y="105" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-oI-Xxz" userLabel="tempoSlider">
+                                        <rect key="frame" x="-2" y="130.5" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="tempoSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="cdE-8R-Gea"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6t-Ej-5eD" userLabel="Pitch">
+                                        <rect key="frame" x="0.0" y="165.5" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="dmt-q9-NTp" userLabel="pitchSlider">
+                                        <rect key="frame" x="-2" y="191" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="pitchSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fav-7x-PGH"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9E-FO-jLd">
+                                        <rect key="frame" x="0.0" y="226" width="355" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-Br-1aU" userLabel="seekSlider">
+                                        <rect key="frame" x="-2" y="251.5" width="359" height="31"/>
+                                        <connections>
+                                            <action selector="seekSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GwU-ds-loP"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SuperPoweredVerify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-rC-AR9">
@@ -82,10 +92,16 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9NC-vr-E5G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="SZ8-SH-NDJ"/>
+                            <constraint firstItem="9NC-vr-E5G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W67-3u-0Xn"/>
+                            <constraint firstAttribute="trailing" secondItem="9NC-vr-E5G" secondAttribute="trailing" constant="10" id="igb-cq-9dq"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="playTempoSlider" destination="g8k-oI-Xxz" id="8Kk-Ju-G3P"/>
+                        <outlet property="pitchSlider" destination="dmt-q9-NTp" id="ow4-p7-IBn"/>
                         <outlet property="seekSlider" destination="KSj-Br-1aU" id="U3f-mw-Mvl"/>
+                        <outlet property="tempoSlider" destination="g8k-oI-Xxz" id="MB1-DB-KDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -18,6 +18,7 @@
 - (void)pause; // Pause.
 - (void)seekTo:(float)percent; // Jump to a specific position.
 - (void)setTempo:(float)tempo; // Change tempo(speed rate).
+- (void)setPitch:(int)pitch; // Change pitch(-12 to 12).
 - (void)toggle; // Start/stop Superpowered.
 - (void)setSong:(NSURL*)url; // Set song.
 - (void)setLoop:(bool)isLoop; // Loop setting.

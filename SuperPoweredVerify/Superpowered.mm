@@ -32,7 +32,6 @@
 - (void)updatePlayerLabel:(UILabel *)label slider:(UISlider *)slider button:(UIButton *)button {
     bool tracking = slider.tracking;
     unsigned int positionSeconds = tracking ? int(float(player->durationSeconds) * slider.value) : player->positionSeconds;
-    
     if (positionSeconds != lastPositionSeconds) {
         lastPositionSeconds = positionSeconds;
         NSString *str = [[NSString alloc] initWithFormat:@"%02d:%02d %02d:%02d", player->durationSeconds / 60, player->durationSeconds % 60, positionSeconds / 60, positionSeconds % 60];
@@ -64,6 +63,10 @@
 
 - (void)setTempo:(float)tempo {
     player->setTempo(tempo, 1.0);
+}
+
+- (void)setPitch:(int)pitch {
+    player->setPitchShift(pitch);
 }
 
 - (void)toggle {
@@ -104,7 +107,6 @@ static bool audioProcessing(void *clientdata, float **buffers, unsigned int inpu
     
     /*
      Let's process some audio.
-     If you'd like to change connections or tap into something, no abstract connection handling and no callbacks required!
      */
     bool silence = !self->player->process(self->stereoBuffer, false, numberOfSamples, 1.0f, 0.0f, -1.0);
     
