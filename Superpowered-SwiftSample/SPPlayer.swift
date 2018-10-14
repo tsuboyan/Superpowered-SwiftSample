@@ -6,8 +6,6 @@
 //  Copyright © 2017-2018 Rirex. All rights reserved.
 //
 
-import UIKit
-
 class SPPlayer: NSObject {
     
     var superpowered: Superpowered!
