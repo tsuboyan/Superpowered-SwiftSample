@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		3D0527601F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D05275F1F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.mm */; };
 		3D0527631F3D7ABF00A87B83 /* Superpowered.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D0527621F3D7ABF00A87B83 /* Superpowered.mm */; };
-		3D05276F1F3D7D6800A87B83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D05276E1F3D7D6800A87B83 /* AVFoundation.framework */; };
-		3D0527711F3D7D7400A87B83 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527701F3D7D7400A87B83 /* MediaPlayer.framework */; };
-		3D0527731F3D7D8500A87B83 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527721F3D7D8500A87B83 /* AudioToolbox.framework */; };
-		3D0527761F3D7FE700A87B83 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527751F3D7FE700A87B83 /* CoreMedia.framework */; };
-		3D0527781F3D801700A87B83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527771F3D801700A87B83 /* Foundation.framework */; };
-		3D05277A1F3D809C00A87B83 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527791F3D809C00A87B83 /* Accelerate.framework */; };
 		3D0584121F17073200B022BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0584111F17073200B022BC /* AppDelegate.swift */; };
 		3D0584141F17073200B022BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0584131F17073200B022BC /* ViewController.swift */; };
 		3D0584171F17073200B022BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0584151F17073200B022BC /* Main.storyboard */; };
@@ -56,13 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D05277A1F3D809C00A87B83 /* Accelerate.framework in Frameworks */,
-				3D0527781F3D801700A87B83 /* Foundation.framework in Frameworks */,
-				3D0527761F3D7FE700A87B83 /* CoreMedia.framework in Frameworks */,
-				3D0527731F3D7D8500A87B83 /* AudioToolbox.framework in Frameworks */,
 				3D1627E01F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a in Frameworks */,
-				3D0527711F3D7D7400A87B83 /* MediaPlayer.framework in Frameworks */,
-				3D05276F1F3D7D6800A87B83 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
