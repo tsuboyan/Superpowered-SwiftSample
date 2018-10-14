@@ -28,23 +28,6 @@
 #endif
 }
 
-// Called periodically by ViewController to update the user interface.
-- (void)updatePlayerLabel:(UILabel *)label slider:(UISlider *)slider button:(UIButton *)button {
-    bool tracking = slider.tracking;
-    unsigned int positionSeconds = tracking ? int(float(player->durationSeconds) * slider.value) : player->positionSeconds;
-    if (positionSeconds != lastPositionSeconds) {
-        lastPositionSeconds = positionSeconds;
-        NSString *str = [[NSString alloc] initWithFormat:@"%02d:%02d %02d:%02d", player->durationSeconds / 60, player->durationSeconds % 60, positionSeconds / 60, positionSeconds % 60];
-        label.text = str;
-#if !__has_feature(objc_arc)
-        [str release];
-#endif
-    };
-    
-    if (!button.tracking && (button.selected != player->playing)) button.selected = player->playing;
-    if (!tracking && (slider.value != player->positionPercent)) slider.value = player->positionPercent;
-}
-
 - (void)togglePlayback { // Play/pause.
     player->togglePlayback();
 }

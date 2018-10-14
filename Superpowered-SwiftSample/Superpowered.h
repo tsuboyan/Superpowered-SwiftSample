@@ -11,8 +11,6 @@
     uint64_t avgUnitsPerSecond, maxUnitsPerSecond;
 }
 
-// Updates the user interface according to the file player's state.
-- (void)updatePlayerLabel:(UILabel *)label slider:(UISlider *)slider button:(UIButton *)button;
 - (void)togglePlayback; // Play/pause.
 - (void)play; // Play.
 - (void)pause; // Pause.

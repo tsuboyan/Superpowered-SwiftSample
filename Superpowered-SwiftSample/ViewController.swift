@@ -31,7 +31,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         present(picker, animated: true, completion: nil)
     }
     
-    // When you piked song
+    // Called when you picked song 
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         defer {
             dismiss(animated: true, completion: nil)
