@@ -1,4 +1,4 @@
-#import "SuperPoweredVerify-Bridging-Header.h"
+#import "Superpowered-SwiftSample-Bridging-Header.h"
 #import "SuperpoweredAdvancedAudioPlayer.h"
 #import "SuperpoweredSimple.h"
 #import "SuperpoweredIOSAudioIO.h"

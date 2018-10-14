@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,74 +14,73 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9NC-vr-E5G">
-                                <rect key="frame" x="10" y="193" width="355" height="281.5"/>
+                                <rect key="frame" x="10" y="159" width="580" height="281.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boc-w1-DtC" userLabel="selectSongButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="30"/>
                                         <state key="normal" title="Select"/>
                                         <connections>
                                             <action selector="selectSongButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iT5-zt-dpP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-gw-RYW" userLabel="playButton">
-                                        <rect key="frame" x="0.0" y="35" width="355" height="30"/>
+                                        <rect key="frame" x="0.0" y="35" width="580" height="30"/>
                                         <state key="normal" title="Play"/>
                                         <connections>
                                             <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opr-Tu-EGT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDy-BG-vJN" userLabel="stopButton">
-                                        <rect key="frame" x="0.0" y="70" width="355" height="30"/>
+                                        <rect key="frame" x="0.0" y="70" width="580" height="30"/>
                                         <state key="normal" title="Stop"/>
                                         <connections>
                                             <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpD-YM-XDj"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxh-KT-lWt">
-                                        <rect key="frame" x="0.0" y="105" width="355" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="105" width="580" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-oI-Xxz" userLabel="tempoSlider">
-                                        <rect key="frame" x="-2" y="130.5" width="359" height="31"/>
+                                        <rect key="frame" x="0.0" y="130" width="580" height="30"/>
                                         <connections>
                                             <action selector="tempoSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="cdE-8R-Gea"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6t-Ej-5eD" userLabel="Pitch">
-                                        <rect key="frame" x="0.0" y="165.5" width="355" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="165" width="580" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-12" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="dmt-q9-NTp" userLabel="pitchSlider">
-                                        <rect key="frame" x="-2" y="191" width="359" height="31"/>
+                                        <rect key="frame" x="0.0" y="191" width="580" height="30"/>
                                         <connections>
                                             <action selector="pitchSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fav-7x-PGH"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9E-FO-jLd">
-                                        <rect key="frame" x="0.0" y="226" width="355" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="226" width="580" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KSj-Br-1aU" userLabel="seekSlider">
-                                        <rect key="frame" x="-2" y="251.5" width="359" height="31"/>
+                                        <rect key="frame" x="0.0" y="251" width="580" height="30"/>
                                         <connections>
                                             <action selector="seekSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GwU-ds-loP"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SuperPoweredVerify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-rC-AR9">
-                                <rect key="frame" x="109.5" y="60" width="156.5" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superpowered-SwiftSample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-rC-AR9">
+                                <rect key="frame" x="192" y="40" width="215" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,9 +88,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RwN-rC-AR9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="FCL-G2-qXO"/>
                             <constraint firstItem="9NC-vr-E5G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="SZ8-SH-NDJ"/>
                             <constraint firstItem="9NC-vr-E5G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W67-3u-0Xn"/>
                             <constraint firstAttribute="trailing" secondItem="9NC-vr-E5G" secondAttribute="trailing" constant="10" id="igb-cq-9dq"/>
+                            <constraint firstItem="RwN-rC-AR9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nkl-NI-fBQ"/>
                         </constraints>
                     </view>
                     <connections>

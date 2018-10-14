@@ -36,8 +36,8 @@
 		3D0527751F3D7FE700A87B83 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		3D0527771F3D801700A87B83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D0527791F3D809C00A87B83 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		3D0527811F3DA87500A87B83 /* SuperPoweredVerify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperPoweredVerify-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		3D05840E1F17073200B022BC /* SuperPoweredVerify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredVerify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0527811F3DA87500A87B83 /* Superpowered-SwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Superpowered-SwiftSample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3D05840E1F17073200B022BC /* Superpowered-SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Superpowered-SwiftSample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0584111F17073200B022BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D0584131F17073200B022BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D0584161F17073200B022BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,19 +96,19 @@
 			children = (
 				3D05276D1F3D7D6800A87B83 /* Frameworks */,
 				3D05840F1F17073200B022BC /* Products */,
-				3D0584101F17073200B022BC /* SuperPoweredVerify */,
+				3D0584101F17073200B022BC /* Superpowered-SwiftSample */,
 			);
 			sourceTree = "<group>";
 		};
 		3D05840F1F17073200B022BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D05840E1F17073200B022BC /* SuperPoweredVerify.app */,
+				3D05840E1F17073200B022BC /* Superpowered-SwiftSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D0584101F17073200B022BC /* SuperPoweredVerify */ = {
+		3D0584101F17073200B022BC /* Superpowered-SwiftSample */ = {
 			isa = PBXGroup;
 			children = (
 				3D0584231F170DDB00B022BC /* Lib */,
@@ -119,12 +119,12 @@
 				3D1627E11F3DCC470029A5CF /* SPPlayer.swift */,
 				3D1627DD1F3DC3980029A5CF /* Superpowered.h */,
 				3D0527621F3D7ABF00A87B83 /* Superpowered.mm */,
-				3D0527811F3DA87500A87B83 /* SuperPoweredVerify-Bridging-Header.h */,
+				3D0527811F3DA87500A87B83 /* Superpowered-SwiftSample-Bridging-Header.h */,
 				3D0584181F17073200B022BC /* Assets.xcassets */,
 				3D05841D1F17073200B022BC /* Info.plist */,
 				3D0584111F17073200B022BC /* AppDelegate.swift */,
 			);
-			path = SuperPoweredVerify;
+			path = "Superpowered-SwiftSample";
 			sourceTree = "<group>";
 		};
 		3D0584231F170DDB00B022BC /* Lib */ = {
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D05840D1F17073200B022BC /* SuperPoweredVerify */ = {
+		3D05840D1F17073200B022BC /* Superpowered-SwiftSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D0584201F17073200B022BC /* Build configuration list for PBXNativeTarget "SuperPoweredVerify" */;
+			buildConfigurationList = 3D0584201F17073200B022BC /* Build configuration list for PBXNativeTarget "Superpowered-SwiftSample" */;
 			buildPhases = (
 				3D05840A1F17073200B022BC /* Sources */,
 				3D05840B1F17073200B022BC /* Frameworks */,
@@ -151,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = SuperPoweredVerify;
+			name = "Superpowered-SwiftSample";
 			productName = SuperPoweredVerify;
-			productReference = 3D05840E1F17073200B022BC /* SuperPoweredVerify.app */;
+			productReference = 3D05840E1F17073200B022BC /* Superpowered-SwiftSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -179,7 +179,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D0584091F17073200B022BC /* Build configuration list for PBXProject "SuperPoweredVerify" */;
+			buildConfigurationList = 3D0584091F17073200B022BC /* Build configuration list for PBXProject "Superpowered-SwiftSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -192,7 +192,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D05840D1F17073200B022BC /* SuperPoweredVerify */,
+				3D05840D1F17073200B022BC /* Superpowered-SwiftSample */,
 			);
 		};
 /* End PBXProject section */
@@ -364,16 +364,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W9QV9753NK;
-				INFOPLIST_FILE = SuperPoweredVerify/Info.plist;
+				INFOPLIST_FILE = "Superpowered-SwiftSample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SuperPoweredVerify/Lib",
+					"$(PROJECT_DIR)/Superpowered-SwiftSample/Lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.SuperPoweredVerify;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.rirex.Superpowered-SwiftSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SuperPoweredVerify-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Superpowered-SwiftSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -385,15 +385,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = W9QV9753NK;
-				INFOPLIST_FILE = SuperPoweredVerify/Info.plist;
+				INFOPLIST_FILE = "Superpowered-SwiftSample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/SuperPoweredVerify/Lib",
+					"$(PROJECT_DIR)/Superpowered-SwiftSample/Lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.SuperPoweredVerify;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.rirex.Superpowered-SwiftSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SuperPoweredVerify-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Superpowered-SwiftSample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -401,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D0584091F17073200B022BC /* Build configuration list for PBXProject "SuperPoweredVerify" */ = {
+		3D0584091F17073200B022BC /* Build configuration list for PBXProject "Superpowered-SwiftSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D05841E1F17073200B022BC /* Debug */,
@@ -410,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D0584201F17073200B022BC /* Build configuration list for PBXNativeTarget "SuperPoweredVerify" */ = {
+		3D0584201F17073200B022BC /* Build configuration list for PBXNativeTarget "Superpowered-SwiftSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D0584211F17073200B022BC /* Debug */,

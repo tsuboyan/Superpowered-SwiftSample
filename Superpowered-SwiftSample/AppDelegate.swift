@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  SuperPoweredVerify
+//  Superpowered-SwiftSample
 //
 //  Created by AtsushiOtsubo on 2017/07/13.
 //  Copyright © 2017 Rirex. All rights reserved.
