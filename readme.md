@@ -1,7 +1,7 @@
 # Superpowered-SwiftSample
 
 ## Description
-This is a Superpowered audio player sample for iOS written by swift. 
+This is a Superpowered audio player sample for iOS written by swift. It's also support playback in the background. 
 
 ![Superpowered-SwiftSample.png](https://github.com/AtsushiOtsubo/Superpowered-SwiftSample/blob/images/Superpowered-SwiftSample.png?raw=true)
 
