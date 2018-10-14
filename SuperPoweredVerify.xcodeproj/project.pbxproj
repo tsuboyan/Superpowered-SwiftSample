@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0527601F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D05275F1F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.mm */; };
+		3D0527631F3D7ABF00A87B83 /* Superpowered.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3D0527621F3D7ABF00A87B83 /* Superpowered.mm */; };
+		3D05276F1F3D7D6800A87B83 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D05276E1F3D7D6800A87B83 /* AVFoundation.framework */; };
+		3D0527711F3D7D7400A87B83 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527701F3D7D7400A87B83 /* MediaPlayer.framework */; };
+		3D0527731F3D7D8500A87B83 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527721F3D7D8500A87B83 /* AudioToolbox.framework */; };
+		3D0527761F3D7FE700A87B83 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527751F3D7FE700A87B83 /* CoreMedia.framework */; };
+		3D0527781F3D801700A87B83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527771F3D801700A87B83 /* Foundation.framework */; };
+		3D05277A1F3D809C00A87B83 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0527791F3D809C00A87B83 /* Accelerate.framework */; };
+		3D0584121F17073200B022BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0584111F17073200B022BC /* AppDelegate.swift */; };
+		3D0584141F17073200B022BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0584131F17073200B022BC /* ViewController.swift */; };
+		3D0584171F17073200B022BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0584151F17073200B022BC /* Main.storyboard */; };
+		3D0584191F17073200B022BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0584181F17073200B022BC /* Assets.xcassets */; };
+		3D05841C1F17073200B022BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D05841A1F17073200B022BC /* LaunchScreen.storyboard */; };
+		3D1627E01F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1627DF1F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a */; };
+		3D1627E21F3DCC470029A5CF /* SPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1627E11F3DCC470029A5CF /* SPPlayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D05275E1F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperpoweredIOSAudioIO.h; sourceTree = "<group>"; };
+		3D05275F1F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SuperpoweredIOSAudioIO.mm; sourceTree = "<group>"; };
+		3D0527621F3D7ABF00A87B83 /* Superpowered.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Superpowered.mm; sourceTree = "<group>"; };
+		3D0527641F3D7C1300A87B83 /* SuperpoweredAdvancedAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperpoweredAdvancedAudioPlayer.h; sourceTree = "<group>"; };
+		3D05276B1F3D7C6B00A87B83 /* SuperpoweredSimple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperpoweredSimple.h; sourceTree = "<group>"; };
+		3D05276E1F3D7D6800A87B83 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3D0527701F3D7D7400A87B83 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3D0527721F3D7D8500A87B83 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3D0527751F3D7FE700A87B83 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3D0527771F3D801700A87B83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D0527791F3D809C00A87B83 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3D0527811F3DA87500A87B83 /* SuperPoweredVerify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperPoweredVerify-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3D05840E1F17073200B022BC /* SuperPoweredVerify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperPoweredVerify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0584111F17073200B022BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D0584131F17073200B022BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D0584161F17073200B022BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D0584181F17073200B022BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D05841B1F17073200B022BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D05841D1F17073200B022BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D1627DD1F3DC3980029A5CF /* Superpowered.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Superpowered.h; sourceTree = "<group>"; };
+		3D1627DF1F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSuperpoweredAudioIOS.a; path = SuperPoweredVerify/Lib/libSuperpoweredAudioIOS.a; sourceTree = SOURCE_ROOT; };
+		3D1627E11F3DCC470029A5CF /* SPPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPPlayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D05840B1F17073200B022BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D05277A1F3D809C00A87B83 /* Accelerate.framework in Frameworks */,
+				3D0527781F3D801700A87B83 /* Foundation.framework in Frameworks */,
+				3D0527761F3D7FE700A87B83 /* CoreMedia.framework in Frameworks */,
+				3D0527731F3D7D8500A87B83 /* AudioToolbox.framework in Frameworks */,
+				3D1627E01F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a in Frameworks */,
+				3D0527711F3D7D7400A87B83 /* MediaPlayer.framework in Frameworks */,
+				3D05276F1F3D7D6800A87B83 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D05276D1F3D7D6800A87B83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D0527791F3D809C00A87B83 /* Accelerate.framework */,
+				3D0527771F3D801700A87B83 /* Foundation.framework */,
+				3D0527751F3D7FE700A87B83 /* CoreMedia.framework */,
+				3D0527721F3D7D8500A87B83 /* AudioToolbox.framework */,
+				3D0527701F3D7D7400A87B83 /* MediaPlayer.framework */,
+				3D05276E1F3D7D6800A87B83 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D05277D1F3DA3B200A87B83 /* Superpowered */ = {
+			isa = PBXGroup;
+			children = (
+				3D0527641F3D7C1300A87B83 /* SuperpoweredAdvancedAudioPlayer.h */,
+				3D05275E1F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.h */,
+				3D05275F1F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.mm */,
+				3D05276B1F3D7C6B00A87B83 /* SuperpoweredSimple.h */,
+			);
+			path = Superpowered;
+			sourceTree = "<group>";
+		};
+		3D0584051F17073200B022BC = {
+			isa = PBXGroup;
+			children = (
+				3D05276D1F3D7D6800A87B83 /* Frameworks */,
+				3D05840F1F17073200B022BC /* Products */,
+				3D0584101F17073200B022BC /* SuperPoweredVerify */,
+			);
+			sourceTree = "<group>";
+		};
+		3D05840F1F17073200B022BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D05840E1F17073200B022BC /* SuperPoweredVerify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D0584101F17073200B022BC /* SuperPoweredVerify */ = {
+			isa = PBXGroup;
+			children = (
+				3D0584231F170DDB00B022BC /* Lib */,
+				3D05277D1F3DA3B200A87B83 /* Superpowered */,
+				3D05841A1F17073200B022BC /* LaunchScreen.storyboard */,
+				3D0584151F17073200B022BC /* Main.storyboard */,
+				3D0584131F17073200B022BC /* ViewController.swift */,
+				3D1627E11F3DCC470029A5CF /* SPPlayer.swift */,
+				3D1627DD1F3DC3980029A5CF /* Superpowered.h */,
+				3D0527621F3D7ABF00A87B83 /* Superpowered.mm */,
+				3D0527811F3DA87500A87B83 /* SuperPoweredVerify-Bridging-Header.h */,
+				3D0584181F17073200B022BC /* Assets.xcassets */,
+				3D05841D1F17073200B022BC /* Info.plist */,
+				3D0584111F17073200B022BC /* AppDelegate.swift */,
+			);
+			path = SuperPoweredVerify;
+			sourceTree = "<group>";
+		};
+		3D0584231F170DDB00B022BC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3D1627DF1F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a */,
+			);
+			name = Lib;
+			path = ../Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D05840D1F17073200B022BC /* SuperPoweredVerify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D0584201F17073200B022BC /* Build configuration list for PBXNativeTarget "SuperPoweredVerify" */;
+			buildPhases = (
+				3D05840A1F17073200B022BC /* Sources */,
+				3D05840B1F17073200B022BC /* Frameworks */,
+				3D05840C1F17073200B022BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperPoweredVerify;
+			productName = SuperPoweredVerify;
+			productReference = 3D05840E1F17073200B022BC /* SuperPoweredVerify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D0584061F17073200B022BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = rirex;
+				TargetAttributes = {
+					3D05840D1F17073200B022BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W9QV9753NK;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3D0584091F17073200B022BC /* Build configuration list for PBXProject "SuperPoweredVerify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D0584051F17073200B022BC;
+			productRefGroup = 3D05840F1F17073200B022BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D05840D1F17073200B022BC /* SuperPoweredVerify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D05840C1F17073200B022BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D05841C1F17073200B022BC /* LaunchScreen.storyboard in Resources */,
+				3D0584191F17073200B022BC /* Assets.xcassets in Resources */,
+				3D0584171F17073200B022BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D05840A1F17073200B022BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0527631F3D7ABF00A87B83 /* Superpowered.mm in Sources */,
+				3D0584141F17073200B022BC /* ViewController.swift in Sources */,
+				3D0527601F3D7A2800A87B83 /* SuperpoweredIOSAudioIO.mm in Sources */,
+				3D1627E21F3DCC470029A5CF /* SPPlayer.swift in Sources */,
+				3D0584121F17073200B022BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D0584151F17073200B022BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D0584161F17073200B022BC /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		3D05841A1F17073200B022BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D05841B1F17073200B022BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D05841E1F17073200B022BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D05841F1F17073200B022BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D0584211F17073200B022BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W9QV9753NK;
+				INFOPLIST_FILE = SuperPoweredVerify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperPoweredVerify/Lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.SuperPoweredVerify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SuperPoweredVerify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3D0584221F17073200B022BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W9QV9753NK;
+				INFOPLIST_FILE = SuperPoweredVerify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperPoweredVerify/Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.SuperPoweredVerify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SuperPoweredVerify-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D0584091F17073200B022BC /* Build configuration list for PBXProject "SuperPoweredVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D05841E1F17073200B022BC /* Debug */,
+				3D05841F1F17073200B022BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D0584201F17073200B022BC /* Build configuration list for PBXNativeTarget "SuperPoweredVerify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0584211F17073200B022BC /* Debug */,
+				3D0584221F17073200B022BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D0584061F17073200B022BC /* Project object */;
+}
