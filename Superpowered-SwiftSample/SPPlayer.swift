@@ -3,7 +3,7 @@
 //  Superpowered-SwiftSample
 //
 //  Created by Atsushi Otsubo on 2017/08/11.
-//  Copyright © 2017 Rirex. All rights reserved.
+//  Copyright © 2017-2018 Rirex. All rights reserved.
 //
 
 import UIKit

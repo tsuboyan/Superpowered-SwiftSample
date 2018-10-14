@@ -3,7 +3,7 @@
 //  Superpowered-SwiftSample
 //
 //  Created by AtsushiOtsubo on 2017/07/13.
-//  Copyright © 2017 Rirex. All rights reserved.
+//  Copyright © 2017-2018 Rirex. All rights reserved.
 //
 
 import UIKit
@@ -72,7 +72,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         spPlayer.setSeek(percent: seekSlider.value)
     }
     
-    func spPlayerEnded(notification: Notification?) {
+    @objc func spPlayerEnded(notification: Notification?) {
         print("PlayerEnded")
     }
     
@@ -80,7 +80,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     func setAVAudioSession() {
         let session = AVAudioSession.sharedInstance()
         do {
-            try session.setCategory(AVAudioSessionCategoryPlayback)
+            try session.setCategory(.playback, mode:.default)
         } catch  {
             fatalError("Category setting failed")
         }
