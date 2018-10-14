@@ -22,6 +22,7 @@
 		3D05841C1F17073200B022BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D05841A1F17073200B022BC /* LaunchScreen.storyboard */; };
 		3D1627E01F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1627DF1F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a */; };
 		3D1627E21F3DCC470029A5CF /* SPPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1627E11F3DCC470029A5CF /* SPPlayer.swift */; };
+		3D57E1F62173982600E09243 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 3D57E1F52173982600E09243 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		3D1627DD1F3DC3980029A5CF /* Superpowered.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Superpowered.h; sourceTree = "<group>"; };
 		3D1627DF1F3DC6FC0029A5CF /* libSuperpoweredAudioIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSuperpoweredAudioIOS.a; path = SuperPoweredVerify/Lib/libSuperpoweredAudioIOS.a; sourceTree = SOURCE_ROOT; };
 		3D1627E11F3DCC470029A5CF /* SPPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPPlayer.swift; sourceTree = "<group>"; };
+		3D57E1F52173982600E09243 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		3D0584051F17073200B022BC = {
 			isa = PBXGroup;
 			children = (
+				3D57E1F52173982600E09243 /* readme.md */,
 				3D05276D1F3D7D6800A87B83 /* Frameworks */,
 				3D05840F1F17073200B022BC /* Products */,
 				3D0584101F17073200B022BC /* Superpowered-SwiftSample */,
@@ -204,6 +207,7 @@
 			files = (
 				3D05841C1F17073200B022BC /* LaunchScreen.storyboard in Resources */,
 				3D0584191F17073200B022BC /* Assets.xcassets in Resources */,
+				3D57E1F62173982600E09243 /* readme.md in Resources */,
 				3D0584171F17073200B022BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
